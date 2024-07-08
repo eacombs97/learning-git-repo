@@ -1,0 +1,15 @@
+A good commit message should describe what changes were applied.
+
+Commit messages should be in present test so it is clear that it is that commit doing it.
+
+Commit messages should be in a max of 50 characters. If that is not enough extra description can be added.
+
+-------------------------
+To create a multiline commit message:
+git commit
+
+
+This will open a place where multiple lines can be added as a commit message. You could do this in the following format for a message:
+subject and description
+
+reason why
