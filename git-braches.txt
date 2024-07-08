@@ -1,0 +1,16 @@
+Branches can be used to have a second version of the same code to work with. This can be used with for example, when you code
+is running production and shouldn't be changed while running or when more than one person is working on code at the same time.
+
+Overall it's considered best practice to do all changes in branches.
+
+-----------------------------------------
+Branches can be made in the git provider or locally.
+
+When working in a branch locally that specific branch can then be published to the git provider. When finished a pull request 
+can be created. Locally one would merge the branch instead, but with bigger projects often a pull request is required. From 
+here people can also give reviews to code. Once the pull request is completed the code becomes a part of the main branch.
+
+It's best practice to delete the old branch afterwards. (Branches tend to be made for specific features or bugs as well.)
+
+------------------------------------------
+It is primarily in public or shared repositories you see branching a pull requests used.
