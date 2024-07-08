@@ -1,0 +1,22 @@
+Any files put into the .gitignore file will be ignored. Git knows to automatically ignore these.
+
+You can also use regular expressions in the .gitignore file.
+
+They are commonly used for logfiles or certain local configuration files.
+
+-------------------------------------------
+When I first use the command:
+git status
+it will show that two files with changes that are untracked.
+
+-------
+files or text can be added to .gitignore
+
+Adding a file:
+filelog.txt 
+
+Adding a folder:
+Logs/
+
+Adding a file in a folder of a specific file type (txt):
+Logs/*.txt

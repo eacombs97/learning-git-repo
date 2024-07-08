@@ -23,3 +23,5 @@ This helps to make the history more readable.
 
 To revert states entirely use the command:
 git revert <commitid>
+
+This shows in the history as well that a previous state was reverted back to.
