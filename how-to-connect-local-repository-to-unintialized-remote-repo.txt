@@ -1,0 +1,24 @@
+This is an example of changing a local repository to a git repository.
+
+--------------------------------------
+Use the command:
+git init 
+to intialize the empty repostiory from a folder into a local repostiory.
+
+--------------------------------------
+To make sure the files are commited to the local repostiory use the commands:
+git add .
+and 
+git commit -m "initial commit"
+to stage and commit the files within the local repostiory.
+
+--------------------------------------
+Now to add this to the remote repostiory use the command:
+git remote add origin https://github.com/eacombs97/new-repo.git
+to link it to the empty repository in github. From here they are now connected together.
+
+If you use the push command here it will be confused because there are no branches. 
+
+--------------------------------------
+To set up the branch use the command:
+git push --set-upstream origin main
