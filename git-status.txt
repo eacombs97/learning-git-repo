@@ -1,0 +1,5 @@
+This example file covers git status command.
+
+--------------------------------------------
+To create a new file in command line use the command:
+new-item -name 'example.md'
