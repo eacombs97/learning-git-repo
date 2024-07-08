@@ -1,5 +1,8 @@
 This is an example file.
 
+To create connect a local repository to an already initialized remote repostiory use the command:
+git clone https://github.com/eacombs97/git-repo.git
+
 --------------------------------------
 Doing the command:
 git add .
