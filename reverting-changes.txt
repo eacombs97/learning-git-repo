@@ -4,3 +4,22 @@ If we make changes we don't want to keep, we can go back to a previous commit.
 To remove staged files use the command:
 git restore --staged <file>
 when there are all files 
+
+-----------------------
+For unstaged items they can be deleted with the command
+git restore <file>
+
+-----------------------
+To look back in git history, go to the git log.
+From here checkout an older version by using the command:
+git checkout <commitid>
+
+This is helpful to see what's going on but not to make changes.
+
+------------------------
+To revert to an old state, use the command:
+git log --oneline
+This helps to make the history more readable.
+
+To revert states entirely use the command:
+git revert <commitid>
