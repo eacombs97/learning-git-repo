@@ -1,0 +1,7 @@
+To track changes from these changes:
+git diff
+to see all the changes that have been made.
+
+This is to help keep track of changes before commits are made.
+
+The command git diff --chached can help keep track of all the changes as well.
