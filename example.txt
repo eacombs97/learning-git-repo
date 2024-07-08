@@ -20,3 +20,5 @@ git commit -m "Adds example.txt"
 This means that a snapshot has been created locally of the state of this file.
 
 --------------------------------------
+To push the commited changes to the git repository use the command:
+git push
