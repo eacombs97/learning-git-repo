@@ -1,0 +1,19 @@
+When delting files the file and it's commit history is still stored by git.
+Just delete the file then push the local repository changes to the remote repository.
+
+-------------------------------
+When a file is renamed, the original file will be shown as deleted and a new file will be shown as being created.
+Once the changes have been staged it will understand the files are the same file with a different name.
+
+To skip the staging area when renaming a file use the command:
+git mv .\secondexample.txt anotherexample.txt
+
+This will place it directly into the staging area.
+
+-------------------------------
+When moving files into folders it will show similarly to files being renamed.
+
+-------------------------------
+Git does NOT keep track of empty folders.
+If you need a folder to be shown create a file called
+.gitkeep
