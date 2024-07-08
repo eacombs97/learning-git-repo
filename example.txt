@@ -1,0 +1,15 @@
+This is an example file.
+
+Doing the command:
+git add .
+adds all files to the staging area.
+
+The command:
+git status
+will inform the user of the changes that are staged to be committed.
+
+To commit a file locally with a message use the command:
+git commit -m "message"
+This allows the user to make the commit as well as inform what the commit was or why it was added.
+EX:
+git commit -m "Adds example.txt"
