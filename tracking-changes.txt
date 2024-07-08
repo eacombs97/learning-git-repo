@@ -5,3 +5,28 @@ to see all the changes that have been made.
 This is to help keep track of changes before commits are made.
 
 The command git diff --chached can help keep track of all the changes as well.
+
+--------------------------------------
+To view the history of the repository use the command:
+git log
+
+To escape the scrolled view press:
+q
+
+--------------------------------------
+To see the exact differents or the history use the command:
+git show 038e3cf09d3cc504398cdca344deb7f161fbb545
+
+--------------------------------------
+If I use:
+git log -p 
+it shows the history of all the changes that have been made
+
+--------------------------------------
+The command:
+git log --graph
+shows the vizualization of how branches are moving around.
+
+--------------------------------------
+To find a specific part of a commit message use:
+git log --grep='example'
