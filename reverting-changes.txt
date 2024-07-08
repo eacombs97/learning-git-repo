@@ -1,0 +1,6 @@
+If we make changes we don't want to keep, we can go back to a previous commit.
+
+-----------------------
+To remove staged files use the command:
+git restore --staged <file>
+when there are all files 
