@@ -1,0 +1,19 @@
+Merge conflicts can happen when different people are working on the same file, specifically when you try to merge them 
+and git doesn't understand which version it should keep.
+
+These can also come up when it gets cnfused where you are in history or when you forget to move branches and are 
+working on the wrong branch.
+
+--------------------------------------
+If I have changes in the remote and local repository I may need to pull changes from the remote repository first.
+This can cause a merge conflict. This can be resolved in the merge editor or by the top options.
+
+--------------------------------------
+
+For more tips on solving merge conflicts from GitHub visit: 
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+
+--------------------------------------
+
+For more tips on solving merge conflicts from GitLab visit:
+https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html#in-the-inline-editor
