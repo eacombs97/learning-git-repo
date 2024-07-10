@@ -1,0 +1,55 @@
+Tags alow marking points in history as important.
+
+Tagging gives a named reference to a commit.
+
+They are often used to mark releases (v1.0, v1.1, v2.0).
+
+It can also be used to mark key features or changes (ecommerce redesign).
+
+It can also mark points of discussion (bug, issues136) for the team.
+
+------------------------------------
+There area two types of tags:
+1. lightweight tags
+2. Annotated tags
+
+The annotated tag is the most common and if you're not sure which type of tag to use, use this one.
+------------------------------------
+Lightweight tags:
+
+#Add lightweight tags
+git tag issue136 655da716e7
+git tag <name of tag> <commitId>
+
+-------------------------------------
+Annotated Tags:
+
+#Add annotated tag (most common)
+git tag -a v1.1 -m "Version 1.0" dd5c9428a0
+git tag -a <name of tag> -m <message> <commitId>
+
+This type of tag allows for a message to go with it. This message can be a one line message or a multiline message.
+
+The -a and -m tags could be combined. If we forget -a but include -m it will assume the -a. 
+
+-------------------------------------
+For either type if we forget the commitId Git will assume the current commit.
+
+-------------------------------------
+Listing tags:
+
+list tag
+list tag --list
+list tag -l
+
+-------------------------------------
+To filter tags:
+
+#list tags beginning with "v2"
+git tag -l "v2*"
+
+Here * is a wildcard character that means any characters could come after the v2 and it would still match.
+
+--------------------------------------
+To list tags with annotations:
+git tag -l -n
