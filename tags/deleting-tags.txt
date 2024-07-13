@@ -1,0 +1,6 @@
+To delete tags we can use the commands:
+git tag --delete v1.1
+git tag -d v1.1
+
+That will tell git tag to delete the tag name that follows.
+git tag --delete <tagName>
