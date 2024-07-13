@@ -1,0 +1,25 @@
+When tags are made in a local repository, they aren't automatically pushed to a remote repository.
+
+-------------------------
+git push does not transfer tags by deafult
+
+Tags must be transferred explicitly.
+
+-------------------------
+To get tags from a remote repository use the command:
+
+#fetch commits and tags
+git fetch
+
+#fetch only tags (with associated commits)
+git featch --tags
+
+-------------------------
+To push tags to a remote repository use the command:
+#push a tag to a remote server
+git push origin <tagName>
+git push orignin v1.1
+
+#push all tags to a remote server
+git push origin --tags
+
