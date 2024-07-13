@@ -17,3 +17,5 @@ When moving files into folders it will show similarly to files being renamed.
 Git does NOT keep track of empty folders.
 If you need a folder to be shown create a file called
 .gitkeep
+
+-------------------------------
