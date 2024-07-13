@@ -13,3 +13,5 @@ git push -d origin <tagName>
 
 We just provide the tag name here instead of a branch name.
 
+Deleting a tag in a remote repository does not delete tags from your local repository.
+
