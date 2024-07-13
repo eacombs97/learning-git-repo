@@ -1,0 +1,38 @@
+Tags can be checked out, just like any commit.
+
+The right way to checkout a tag is to create a branch from it.
+This is done by doing the following commands:
+git checkout -b new_branch v1.1
+
+-----------------------
+We can check out the tag directly but this has certain implications:
+git checkout v1.1
+
+This does not create a new branch, this moves the head to where the tag is.
+If we start working from here it will create a detached HEAD State.
+
+This is like being on  an unnamed branch so if we make any new commits, they 
+will not belong to any branch. This especially becomes a problem when we switch 
+to another branch, we will be left with a hard time getting back to those 
+made after being in the detached HEAD state.
+
+This can be fixed 1 of 3 ways.
+
+-----------------------
+WAY ONE:
+Tag the commit at the end to find the attatched tag. This also helps keep git from garbage collecting it.
+
+git tag temp
+
+-----------------------
+WAY TWO:
+Create a branch from the detatched HEAD location. The head still needs to be reattatched 
+to prevent more issues from occuring.
+
+git branch temp_branch
+
+----------------------
+WAY THREE:
+Create a new branch and reattatch the HEAD at the same time.
+
+git checkout -b temp_branch
