@@ -1,6 +1,15 @@
-To delete tags we can use the commands:
+To delete local tags we can use the commands:
 git tag --delete v1.1
 git tag -d v1.1
 
 That will tell git tag to delete the tag name that follows.
 git tag --delete <tagName>
+
+----------------------
+#Delete remote tags like remote branches
+git push origin :v1.1
+git push --delete origin v1.1
+git push -d origin <tagName>
+
+We just provide the tag name here instead of a branch name.
+
