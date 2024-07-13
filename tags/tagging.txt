@@ -47,9 +47,64 @@ To filter tags:
 
 #list tags beginning with "v2"
 git tag -l "v2*"
+    -l option is required or else git will think we're trying to add a tag
 
 Here * is a wildcard character that means any characters could come after the v2 and it would still match.
 
 --------------------------------------
 To list tags with annotations:
 git tag -l -n
+git tag -ln
+By deafult this will just list one line from the annotation. You can put a number after the line if you 
+want to see more than one line from the annotation.
+
+--------------------------------------
+Once we have our tags we can work with the tags just like we can commitIds or SHAs.
+
+git show v1.1
+That tag now references a commit somewhere and it will pull up that commit
+
+git diff v1.0..v1.1
+We can also compare two different versions, grabbing them by the tag.
+---------------------------------------
+Example of use:
+
+git tag
+(shows )
+    v0.0
+    v0.1
+(From earlier examples)
+
+git tag --list
+(shows)
+    v0.0
+    v0.1
+
+git tag -l
+(shows)
+    v0.0
+    v0.1
+
+git tag -a -m "Key feature file added" keyfile <commitId>
+(Adds tag)
+git tag -l
+(shows)
+    keyfile
+    v0.0
+    v0.1
+(These are in alphabetical order)
+
+git tag -l "v*"
+(shows)
+    v0.0
+    v0.1
+
+git tag -l "*.0"
+(shows)
+    v0.0
+
+git tag -ln
+keyfile     Key feature file added
+v0.0        Start
+v0.1        Add to do list
+(This gives you the first line of the annotation as well)
