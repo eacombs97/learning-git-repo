@@ -18,7 +18,7 @@ git fetch --tags
 To push tags to a remote repository use the command:
 #push a tag to a remote server
 git push origin <tagName>
-git push orignin v1.1
+git push origin v1.1
 
 #push all tags to a remote server
 git push origin --tags
