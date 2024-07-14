@@ -12,7 +12,7 @@ To get tags from a remote repository use the command:
 git fetch
 
 #fetch only tags (with associated commits)
-git featch --tags
+git fetch --tags
 
 -------------------------
 To push tags to a remote repository use the command:
