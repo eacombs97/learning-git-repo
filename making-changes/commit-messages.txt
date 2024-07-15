@@ -10,6 +10,15 @@ git commit
 
 
 This will open a place where multiple lines can be added as a commit message. You could do this in the following format for a message:
-subject and description
+  subject and description
 
-reason why
+  reason why
+
+--------------------------
+Commit message convention:
+
+  <type>(<optional scope>): <description>
+
+  <optional body>
+
+  <optional footer>
